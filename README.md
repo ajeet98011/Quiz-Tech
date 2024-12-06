@@ -1,0 +1,1 @@
+Quiz Tech is a dynamic and engaging Android application designed to test and enhance your knowledge. Built using XML for layouts and Java for the backend, the app provides a seamless quiz experience with an intuitive user interface.
