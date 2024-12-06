@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cpp">
+
+    <TextView
+        android:layout_width="286dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="83dp"
+        android:text="C++"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615"></TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="100dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="26dp" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1. What is the main purpose of C++?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q1OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) Web development"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q1OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) System programming and application development"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q1OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) Database management"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q1OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) Designing UI"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 2 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2. Which of the following is a feature of C++?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q2OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) It is purely procedural."
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q2OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) It supports object-oriented programming."
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q2OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) It does not support low-level programming."
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q2OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) It is not backward compatible with C."
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 3 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3. What does the term (polymorphism) mean in C++?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q3OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) Using multiple classes in a program"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q3OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) Having multiple forms of a function or operator"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q3OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) Hiding data from unauthorized access"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q3OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) Overloading constructors"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 4 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4. What is a constructor in C++?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q4OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) A special function that initializes an object"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q4OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) A function to destroy an object"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q4OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) A function that performs data hiding"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q4OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) A function used to overload operators"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 5 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5. Which of the following is true about inheritance in C++?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q5OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) A derived class inherits only private members of the base class."
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q5OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) A derived class cannot override base class functions."
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q5OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) Inheritance allows code reusability."
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q5OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) C++ does not support multiple inheritance."
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 6 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6. What is encapsulation in C++?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q6OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) Binding data and methods together"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q6OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) Hiding implementation details"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q6OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) Both A and B"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q6OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) Only A"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 7 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="7. What is the default access modifier for class members in C++?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q7OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) Public"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q7OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) Private"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q7OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) Protected"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q7OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) None of the above"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 8 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8. What is the output of sizeof(int) in C++ (on most systems)?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q8OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) 2 bytes"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q8OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) 4 bytes"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q8OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) 8 bytes"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q8OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) Depends on compiler"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 9 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="9. What is the correct way to declare a constant in C++?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q9OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) constant int x = 10;"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q9OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) const int x = 10;"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q9OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) #define x 10"
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q9OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) All of the above"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 10 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="10. What is the meaning of the keyword 'friend' in C++?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q10OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) It allows access to private and protected members."
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q10OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) It declares a global function."
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q10OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) It is used to protect data."
+                android:textSize="16dp" />
+            <RadioButton
+                android:id="@+id/q10OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) None of the above"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="Submit"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

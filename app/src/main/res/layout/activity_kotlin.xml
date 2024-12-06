@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kotlin">
+
+    <TextView
+        android:layout_width="286dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="83dp"
+        android:text="Kotlin"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615"></TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="99dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Question 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1. What is Kotlin primarily used for?"
+                android:textSize="19dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q1OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) Frontend web development"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q1OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) Mobile application development"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q1OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) Operating system development"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q1OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) Database management"
+                android:textSize="16dp">
+            </RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+            <!-- Question 2 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Which company officially supports Kotlin?"
+                android:textSize="19dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q2OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) Apple"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q2OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) Microsoft"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q2OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) Google"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q2OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) Oracle"
+                android:textSize="16dp">
+            </RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+            <!-- Question 3 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. What type of programming language is Kotlin?"
+                android:textSize="19dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q3OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) Procedural"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q3OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) Object-oriented"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q3OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) Functional"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q3OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) Both object-oriented and functional"
+                android:textSize="16dp">
+            </RadioButton>
+            </RadioGroup>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+            <TextView
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <!-- Question 4 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. How does Kotlin handle null safety?"
+                android:textSize="19dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q4OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) It allows null values everywhere."
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q4OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) It throws exceptions for null values."
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q4OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) It provides built-in null safety features like nullable types."
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q4OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) It does not support null values."
+                android:textSize="16dp">
+            </RadioButton>
+
+            </RadioGroup>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+            <TextView
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <!-- Repeat the same for Question 5 to Question 10 -->
+
+            <!-- Question 5 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. What is the file extension for Kotlin files?"
+                android:textSize="19dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q5OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) .kot"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q5OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) .kt"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q5OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) .kotlin"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q5OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) .kl"
+                android:textSize="16dp">
+            </RadioButton>
+            </RadioGroup>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+            <TextView
+                android:id="@+id/answer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <!--Question 6 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6. Which of the following is true about val in Kotlin?"
+                android:textSize="19dp"
+                android:textStyle="bold">
+            </TextView>
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+            <RadioButton
+                android:id="@+id/q6OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) val is used to declare mutable variables."
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q6OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) val is used to declare immutable variables."
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q6OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) val can be reassigned after initialization."
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q6OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) val is equivalent to static in Java."
+                android:textSize="16dp">
+            </RadioButton>
+            </RadioGroup>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+            <!-- Question 7 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="7. What is a companion object in Kotlin?"
+                android:textSize="19dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q7OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) An object that is passed to a function as a parameter."
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q7OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) An object used to replace static members in Kotlin."
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q7OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) A global variable accessible anywhere in the program."
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q7OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) A data class feature for serialization."
+                android:textSize="16dp">
+            </RadioButton>
+            </RadioGroup>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+            <!-- Question 8 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. What is the primary difference between open and final in Kotlin?"
+                android:textSize="19dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q8OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) open makes a class inheritable, while final prevents inheritance."
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q8OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) open is used for declaring variables, while final is used for methods."
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q8OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) open allows overriding, while final does not."
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q8OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) Both A and C."
+                android:textSize="16dp">
+            </RadioButton>
+            </RadioGroup>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+            <!-- Question 9 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="9. What is the default visibility modifier in Kotlin?"
+                android:textSize="19dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q9OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) private"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q9OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) protected"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q9OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) internal"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q9OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) public"
+                android:textSize="16dp">
+            </RadioButton>
+            </RadioGroup>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+
+            <!-- Example for Question 10 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. How do you define a function in Kotlin?"
+                android:textSize="19dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q10OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) func"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q10OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) def"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q10OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) fun"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q10OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) function"
+                android:textSize="16dp">
+            </RadioButton>
+            </RadioGroup>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+            <TextView
+                android:id="@+id/answer10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+            
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+            </Space>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="Submit"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

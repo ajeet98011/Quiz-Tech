@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JS">
+
+    <TextView
+        android:layout_width="286dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="83dp"
+        android:text="Java Script"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615"></TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="100dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Question 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1. What is JavaScript primarily used for?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q1OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) Designing web layouts"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q1OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) Styling web pages"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q1OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) Adding interactivity to web pages"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q1OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) Managing databases"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space android:layout_width="20dp" android:layout_height="20dp" />
+
+            <!-- Question 2 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2. Which of the following is a feature of JavaScript?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q2OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) JavaScript is a server-side programming language."
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q2OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) JavaScript is loosely typed and dynamic."
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q2OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) JavaScript does not support functions."
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q2OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) JavaScript runs only on Chrome."
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space android:layout_width="20dp" android:layout_height="20dp" />
+
+            <!-- Question 3 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3. What does the term (hoisting) refer to in JavaScript?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q3OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) Raising error messages"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q3OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) Moving function and variable declarations to the top of their scope"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q3OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) Increasing the size of an array"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q3OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) Modifying the scope of a variable"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+
+
+            <!-- Question 4 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4. Which of the following is true about const in JavaScript?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q4OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) The value of a const variable can never be changed."
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q4OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) const is block-scoped."
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q4OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) const variables can be redeclared."
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q4OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) const can only be used for strings."
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 5 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5. Which of the following is NOT a valid JavaScript data type?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q5OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) string"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q5OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) boolean"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q5OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) character"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q5OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) undefined"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 6 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6. What is the purpose of the this keyword in JavaScript?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q6OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) It refers to the global object always."
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q6OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) It refers to the current object."
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q6OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) It is used to declare variables."
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q6OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) It refers to the previous function called."
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 7 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="7. Which of the following is a JavaScript framework/library?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q7OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) Angular"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q7OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) React"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q7OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) Vue"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q7OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) All of the above"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 8 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8. What is the role of a JavaScript engine in a browser?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q8OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) It renders HTML content."
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q8OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) It compiles and executes JavaScript code."
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q8OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) It connects to the server."
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q8OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) It formats CSS styles."
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 9 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="9. What is the output of the following JavaScript code?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q9OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) An error will occur."
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q9OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) undefined"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q9OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) null"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q9OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) true"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <!-- Question 10 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="10. How do you write an array in JavaScript?"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q10OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) var arr = [1, 2, 3];"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q10OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) var arr = (1, 2, 3);"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q10OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) var arr = {1, 2, 3};"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/q10OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) var arr = 1, 2, 3;"
+                android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"></Space>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="Submit"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

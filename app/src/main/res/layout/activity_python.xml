@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Python">
+
+    <TextView
+        android:layout_width="286dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="83dp"
+        android:text="Python"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615"></TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="98dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<!--Quesion 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1. Which of the following is NOT a feature of Python?"
+                android:textSize="19dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="219dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+           <RadioButton
+               android:id="@+id/q1OptionA"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Python is an interpreted language."
+               android:textSize="16dp">
+           </RadioButton>
+            <RadioButton
+                android:id="@+id/q1OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Python supports both object-oriented and functional programming"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q1OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Python uses static typing"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q1OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Python has a large standard library."
+                android:textSize="16dp"
+                >
+            </RadioButton>
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000"
+                tools:ignore="DuplicateIds" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+<!--Quesion 2-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2. In Python, which of the following data types is immutable?"
+                android:textSize="19dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q2OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List"
+                android:textSize="16dp">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/q2OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Dictionary"
+                android:textSize="16dp">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/q2OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" String"
+                android:textSize="16dp"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/q2OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set"
+                android:textSize="16dp">
+            </RadioButton>
+                </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp">
+
+            </Space>
+
+            <!--Quesion 3-->
+            <!-- Question 3 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3. What is the purpose of the self keyword in a Python class method?"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q3OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To refer to the class itself"
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q3OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To access class variables"
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q3OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To access instance attributes and methods"
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q3OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To declare a class as static"
+                android:textSize="16dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000"
+                tools:ignore="DuplicateIds"/>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <!-- Question 4 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4. Which of the following statements about Python functions is TRUE?"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q4OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) A function can only return one value."
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q4OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) Functions cannot accept other functions as arguments."
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q4OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) Functions are first-class objects in Python."
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q4OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) Functions cannot have default argument values."
+                android:textSize="16dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000"
+                tools:ignore="DuplicateIds"/>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <!-- Question 5 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5. What is the main purpose of the Python __init__ method?"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q5OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) To initialize a class before it is created"
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q5OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) To define a class-level attribute"
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q5OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) To act as a constructor and initialize the object's state"
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q5OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) To define private variables"
+                android:textSize="16dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000"
+                tools:ignore="DuplicateIds"/>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <!-- Question 6 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6. Which of the following statements about Python modules is FALSE?"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q6OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) Modules allow code to be organized into reusable components."
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q6OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) A Python file with a .py extension can be imported as a module."
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q6OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) Once a module is imported, it cannot be re-imported."
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q6OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) The import statement is used to load a module."
+                android:textSize="16dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000"
+                tools:ignore="DuplicateIds"/>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <!-- Question 7 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="7. In Python, which of the following statements about the global keyword is correct?"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q7OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) It allows modification of a local variable."
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q7OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) It allows modification of a global variable from within a function."
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q7OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) It creates a new global variable within a function."
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q7OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) It deletes a global variable."
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/answer7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000"
+                tools:ignore="DuplicateIds"/>
+
+            </RadioGroup>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <!-- Question 8 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8. Which of the following is NOT a valid way to create a set in Python?"
+                android:textSize="19dp"
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/q8OptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A) my_set = set()"
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q8OptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B) my_set = {}"
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q8OptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C) my_set = set([])"
+                android:textSize="16dp"/>
+
+            <RadioButton
+                android:id="@+id/q8OptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D) my_set = set([1, 2, 3])"
+                android:textSize="16dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000"
+                tools:ignore="DuplicateIds"/>
+
+         <Space
+             android:layout_width="20dp"
+             android:layout_height="20dp">
+
+         </Space>
+
+
+         <!--Quesion 9-->
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="9. Which of the following keywords is used for exception handling in Python?"
+             android:textSize="19dp"
+             android:textStyle="bold">
+         </TextView>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+         <RadioButton
+             android:id="@+id/q9OptionA"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="A) error"
+             android:textSize="16dp">
+         </RadioButton>
+         <RadioButton
+             android:id="@+id/q9OptionB"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="B) throw"
+             android:textSize="16dp">
+         </RadioButton>
+         <RadioButton
+             android:id="@+id/q9OptionC"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="C) except"
+             android:textSize="16dp">
+         </RadioButton>
+         <RadioButton
+             android:id="@+id/q9OptionD"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="D) raise"
+             android:textSize="16dp">
+         </RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000"
+                tools:ignore="DuplicateIds" />
+
+         <Space
+             android:layout_width="20dp"
+             android:layout_height="20dp">
+
+         </Space>
+
+         <!--Quesion 10-->
+         <TextView
+
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="10. What does the Python pass statement do?"
+             android:textSize="19dp"
+             android:textStyle="bold">
+         </TextView>
+
+            <RadioGroup
+                android:layout_width="200dp"
+                android:layout_height="220dp"                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+         <RadioButton
+             android:id="@+id/q10OptionA"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="A) Terminates the program"
+             android:textSize="16dp">
+         </RadioButton>
+         <RadioButton
+             android:id="@+id/q10OptionB"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="B) Does nothing and allows the program to continue"
+             android:textSize="16dp">
+         </RadioButton>
+         <RadioButton
+             android:id="@+id/q10OptionC"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="C) Skips an error"
+             android:textSize="16dp">
+         </RadioButton>
+         <RadioButton
+             android:id="@+id/q10OptionD"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="D) Stops a loop"
+             android:textSize="16dp">
+         </RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/answer10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="#FF0000"
+                tools:ignore="DuplicateIds" />
+
+         <Space
+             android:layout_width="20dp"
+             android:layout_height="20dp">
+         </Space>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="Submit"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
